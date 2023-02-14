@@ -24,6 +24,5 @@ public class numpone {
         }
 
         lectura.close();
-
     }
 }

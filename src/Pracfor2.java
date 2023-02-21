@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Pracfor2 {
     public static void main(String[] args) throws Exception {
         Scanner lectura = new Scanner(System.in);
-        int  cantidad,cantm,conth;
+        int cantm,conth;
+        String cantidad;
        conth=0;
        cantm=0;
      
@@ -14,14 +15,14 @@ public class Pracfor2 {
         for(int i=1;i<=10;i++)
         {
             
-            System.out.println("Digita 1 si eres hombre  o 2 si eres mujer 2");
-            cantidad=lectura.nextInt();
-            if(cantidad==1){
+            System.out.println("eres hombre  o   eres mujer ");
+            cantidad=lectura.nextLine();
+            if(cantidad.equalsIgnoreCase("hombre")){
                 conth=conth+1;
 
 
             }
-           else if(cantidad==2){
+           else if(cantidad.equalsIgnoreCase("mujer")){
              cantm=cantm+1;
 
 

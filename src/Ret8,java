@@ -31,16 +31,18 @@ public class Ret8 {
 
         if(vcompra>=50000){
         if(valor==1){
-             totald=vcompra*10/100;
-            System.out.println(" Tu compra es "+vcompra+"pero sacaste bolita roja y tienes un descuento del 10% el total de tu compra es "+totald);
+             totald=vcompra*0.1;
+             double totalc=vcompra-totald;
+            System.out.println(" Tu compra es "+vcompra+"pero sacaste bolita roja y tienes un descuento del 10% el total de tu compra es "+totalc);
             System.out.println("Digite el precio con el que cliente paga");
             pagoc= lectura.nextDouble();
             double cambio=pagoc-totald;
             System.out.println("El cliente tiene un cambio "+cambio);
         }
         else if(valor==2){
-            totald=vcompra*30/100;
-            System.out.println(" Tu compra es "+vcompra+" pero sacaste bolita azul y tienes un 30% de descuento y el total de tu compra es "+totald);
+            totald=vcompra*0.3;
+            double totalc=vcompra-totald;
+            System.out.println(" Tu compra es "+vcompra+" pero sacaste bolita azul y tienes un 30% de descuento y el total de tu compra es "+totalc);
             System.out.println("Digite el precio con el que cliente paga");
             pagoc= lectura.nextDouble();
             double cambio=pagoc-totald;
@@ -51,8 +53,9 @@ public class Ret8 {
 
         }
         else if(valor==3){
-            totald=vcompra*50/100;
-            System.out.println(" Tu compra es "+vcompra+" pero sacaste bolita amarilla y tienes un 50% de descuento y el total de tu compra es "+totald);
+            totald=vcompra*0.5;
+            double totalc=vcompra-totald;
+            System.out.println(" Tu compra es "+vcompra+" pero sacaste bolita amarilla y tienes un 50% de descuento y el total de tu compra es "+totalc);
             System.out.println("Digite el precio con el que cliente paga");
             pagoc= lectura.nextDouble();
             double cambio=pagoc-totald;
@@ -86,3 +89,4 @@ public class Ret8 {
         lectura.close();
     }
 }
+    

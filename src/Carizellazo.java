@@ -3,7 +3,7 @@ import java.util.Random;
 
 
 
-public class Azar {
+public class Carizellazo {
     public static void main(String[] args) throws Exception {
         Scanner lectura = new Scanner(System.in);
         int num;
